@@ -1,10 +1,10 @@
 exports.handler = async function(event) {
 
-const API_KEY="TU_API_KEY";
+const API_KEY="6384ae06-da08-4f15-948e-2517570d89b0";
 
 const {dateFrom,dateTo,status}=event.queryStringParameters;
 
-const url=`https://api.football-data.org/v4/competitions/PD/matches?season=2025&dateFrom=${dateFrom}&dateTo=${dateTo}&status=${status}`;
+const url='https://api.football-data.org/v4/competitions/PD/matches?season=2025&dateFrom=${dateFrom}&dateTo=${dateTo}&status=${status}';
 
 const response=await fetch(url,{
 headers:{
