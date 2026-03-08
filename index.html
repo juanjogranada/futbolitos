@@ -209,7 +209,7 @@ async function buscarPartidos(){
     let dateTo=document.getElementById("dateTo").value;
     let status=obtenerEstadosSeleccionados();
 
-    let url='/.netlify/functions/matches?dateFrom=${dateFrom}&dateTo=${dateTo}&status=${status}';
+    let url=`/.netlify/functions/matches?dateFrom=${dateFrom}&dateTo=${dateTo}&status=${status}`;
     console.log("dateFrom: " + dateFrom);
     console.log("dateTo: " + dateTo);
     console.log("dateTo: " + dateTo);
