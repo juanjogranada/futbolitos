@@ -210,7 +210,12 @@ async function buscarPartidos(){
     let status=obtenerEstadosSeleccionados();
 
     let url='/.netlify/functions/matches?dateFrom=${dateFrom}&dateTo=${dateTo}&status=${status}';
-    console.log("La url: " + url);
+    console.log("dateFrom: " + dateFrom);
+    console.log("dateTo: " + dateTo);
+    console.log("dateTo: " + dateTo);
+    console.log("status: " + status);
+    console.log("url: " + url);
+    
     
     let response=await fetch(url);
 
